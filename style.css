@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
+}
+.container {
+  max-width: 1280px;
+  height: 100vh;
+  margin: auto;
+  background-color: burlywood;
+  padding: 1px;
+}
+h1 {
+  text-align: center;
+  font-size: 26px;
+}
+
+.inputs {
+  width: 600px;
+  margin: auto;
+  /* display: flex;
+  align-items: start;
+  flex-direction: column; */
+  /* text-align: center; */
+}
+#textBox {
+  width: 100%;
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border: none;
+}
+.holder {
+  width: 100%;
+  /* background-color: red; */
+}
+.inputs #redactText,
+#redactSign {
+  width: 70%;
+  height: 50px;
+  font-size: 16px;
+  margin: 6px 0;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+}
+label {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+}
+.redactWords {
+  margin-left: 14px;
+}
+.btn {
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.redact-btn {
+  cursor: pointer;
+  color: white;
+  background-color: darkblue;
+  border: none;
+  font-size: 15px;
+  padding: 14px 30px;
+  border-radius: 10px;
+}
+.refresh {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(46, 46, 83);
+  border: none;
+  padding: 14px 30px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+@media (max-width: 950px) {
+  .container {
+    max-width: 100%;
+  }
+  h1,
+  label {
+    font-size: 18px;
+  }
+
+  #textBox {
+    font-size: 16px;
+    margin: 4px 0;
+  }
+  .inputs #redactText,
+  #redactSign {
+    font-size: 14px;
+  }
+  .redact-btn,
+  .refresh {
+    cursor: none;
+    font-size: 14px;
+  }
+}
+@media (max-width: 450px) {
+  .container {
+    padding: 10px;
+    max-width: 100%;
+  }
+  h1,
+  label {
+    font-size: 16px;
+  }
+  #textBox {
+    font-size: 14px;
+  }
+  .inputs {
+    width: 100%;
+  }
+  .inputs #redactText,
+  #redactSign {
+    width: 100%;
+    /* height: 50px; */
+    font-size: 14px;
+  }
+  .btn {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+}
